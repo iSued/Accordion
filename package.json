@@ -2,20 +2,11 @@
   "name": "skilla-components-library",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.35",
-    "@fortawesome/free-solid-svg-icons": "^5.15.3",
-    "@fortawesome/react-fontawesome": "^0.1.14",
-    "@material-ui/core": "^4.11.4"
-  },
+  "dependencies": {},
   "scripts": {
     "start": "react-scripts start",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "clean": "rm -rf dist",
-    "prepare-build": "npm run clean && NODE_ENV=production babel lib --out-dir dist --extensions \".ts, .tsx\" --ignore 'lib/**/*.text.js'",
-    "copy": "cp package.json dist/ && cp README.md dist/",
-    "build": "npm run prepare-build && npm run copy"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -36,6 +27,10 @@
     ]
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@material-ui/core": "^4.11.4",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
