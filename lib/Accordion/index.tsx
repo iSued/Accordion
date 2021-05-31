@@ -55,7 +55,7 @@ import AccordionOption from "./sub-components/index";
 //   return { data: new Map(Object.entries(data)), toggleCategory };
 // };
 
-const InterestsPage = (props: any) => {
+export default function InterestsPage(props: any) {
   const { data, toggleCategory } = props;
 
   // data
@@ -112,6 +112,4 @@ const InterestsPage = (props: any) => {
       </div>
     </>
   );
-};
-
-export default InterestsPage;
+}
