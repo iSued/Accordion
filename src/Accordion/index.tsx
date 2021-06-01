@@ -55,14 +55,14 @@ import AccordionOption from "./sub-components/index";
 //   return { data: new Map(Object.entries(data)), toggleCategory };
 // };
 
-export default function InterestsPage(props: any) {
+const InterestsPage = (props: any) => {
   const { data, toggleCategory } = props;
 
   // data
   // error
   // toggleCategory(idCategoria) => void
 
-  const [isError, setIsError] = useState(true);
+  const [isError] = useState(true);
   const [openAccordionId, setOpenAccordionId] =
     React.useState<string | null>(null);
 
@@ -112,4 +112,6 @@ export default function InterestsPage(props: any) {
       </div>
     </>
   );
-}
+};
+
+export default InterestsPage;
